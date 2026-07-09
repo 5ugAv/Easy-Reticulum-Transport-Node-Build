@@ -26,6 +26,10 @@ This turns a **Heltec WiFi LoRa 32 V4** into a standalone [Reticulum](https://re
 
 That's the whole install. The **full illustrated walkthrough** — WiFi/LoRa configuration, what the RGB LED colours mean, troubleshooting, and how to add a proper antenna, a battery and a solar panel for off‑grid use — is in **[RTNode2400_Build_Guide.docx](RTNode2400_Build_Guide.docx)** (open it in Word, Pages, or Google Docs).
 
+## No‑build / offline install
+
+Don't want to build the firmware, or short on bandwidth? This bundle also includes a **ready‑made firmware binary** in the **`firmware/`** folder that you can flash directly — no compiler, no big toolchain download. Follow **[OFFLINE_INSTRUCTIONS.md](OFFLINE_INSTRUCTIONS.md)** (you only need the small `esptool` utility). Then configure it via WiFi exactly as in the guide.
+
 ## Works with Reticulum‑Node‑Medic
 
 This build is designed to pair with **[Reticulum‑Node‑Medic](https://github.com/5ugAv/Reticulum-Node-Medic)**, a companion field tool ("an OBD scanner for a mesh network") that can read a node's health over WiFi or over the LoRa mesh and help diagnose or repair it. You don't need it to run a node — but if one is around, the node talks to it automatically.
